@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,22 +8,38 @@
 </head>
 <body>
     <div class="container">
-        <form method="post" action="dashboard.html"> 
-            <div>
-                Login
-            </div>              
-            <div> 
-              <label for="email_login">E-mail</label>
-              <input id="email_login" name="email_login" required="required" type="text" placeholder="Ex: Usuario" /> 
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="col-lg-12">
+                    <form class="card" method="post" action="dashboard.html"> 
+                        <div class="form-group">                            
+                            Login
+                        </div>              
+                        <div> 
+                        <label>E-mail</label>
+                        <input class="form-group"  id="email_login" name="email_login" required="required" type="text" placeholder="Ex: Usuario" /> 
+                        </div>
+                        <div> 
+                            <label class="form-group">Senha</label>
+                            <input id="login" name="login" required="required" type="password" placeholder="Ex: Password"/>
+                        </div>
+                        <div> 
+                        <input type="submit" value="Logar" /> 
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div> 
-                <label>Senha</label>
-                <input id="login" name="login" required="required" type="password" placeholder="Ex: Password"/>
-            </div>
-            <div> 
-              <input type="submit" value="Logar" /> 
-            </div>
-          </form>
+        </div>
     </div>
 </body>
 </html>
+
+<style>
+
+body {
+    align-content: center;
+    align-items: center;
+    background-color: #454d6b;
+}
+
+</style>
