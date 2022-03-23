@@ -16,16 +16,29 @@ As informações, layouts e designs das páginas ficam a critério do desenvolve
 Critérios de aceite:
 
  Criar uma página de login.
+ 
  Criar uma página de dashboard.
+ 
  Utilizar pelo menos um formulário (em qualquer página).
+ 
  Utilizar pelo menos uma tabela (em qualquer página).
+ 
  Utilizar pelo menos uma lista (em qualquer página).
+ 
  Utilizar layout Tableless (ou seja, utilização das divisões/div's).
+ 
  Utilizar HTML no projeto.
+ 
  Utilizar CSS no projeto.
+ 
  Utilizar Bootstrap no projeto (Componentes e Grid).
+ 
  Todas as páginas devem ser responsivas.
+ 
  O projeto deve ser disponibilizado no GitHub.
+ 
  O repositório do GitHub deve possuir um README com uma descrição básica do projeto.
+ 
  Utilizar alguma animação básica do CSS.
+ 
  Utilizar algum layout Grid ou FlexBox.
