@@ -19,6 +19,19 @@
         }
            
     }
+
+    function acesso (login, senha ){
+        if ((login === 'admin@gmail.com') && (senha === 'admin')) {
+            return true;
+        } else {
+            return false ;
+        }
+    }
+    let login = "admin@gmail.com";
+    let senha = "admin";
+    let permiso = acesso(login, senha);
+    console.log ('permiso:', permiso);
+
     let variavel1 = 14.4;
     let variavel2 = 5;
     let variavel3 = '+';
