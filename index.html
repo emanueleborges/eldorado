@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Instituto Eldorado - Meu Sonho</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Meu Sonho - Login </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <script type="text/javascript">
     function soma( valor1, valor2, sinal, booleano ) {
@@ -43,24 +44,130 @@
     let maiorfalso = 3 > 6;
     let verdadeiro = 10 == '10';
     let falso      = 10 === '10';
-
     console.table('Req:', req,' var1:', variavel1, ' var2:',variavel2, ' var3:',variavel3, ' var4:',variavel4);
-
     console.table(' pot:',potencia, ' +1:',maisum, ' -1:',menosum, ' MaiorFalso:',maiorfalso , ' v:', verdadeiro, ' f:', falso );
-    </script>
+
+    let perfil = 1;
+    let perfil_txt = (perfil === 1) ? 'Administrador': 'Usuário';
+    console.log(perfil_txt);
+    let qtd = 3
+    let nota = 0;
+    let controle = 0;
+    while (controle < qtd){
+        nota += Math.random() * 100;
+        controle++;
+        if (nota > 70){
+            nota = 150;
+            controle = 3;
+        } else {
+            nota = 0;
+            controle = 3; 
+        }
+    }
+    console.log('Nota:', nota);
+
+    let carro = {
+        modelo: 'fusca',
+        ano: 1974,
+        marca: 'wolkswagen',
+        cor: 'clara'
+    }
+    let carro_item = Object.values(carro);
+    carro_item.forEach( carro_item  => console.log(carro_item))
+
+
+</script>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="panel panel-default">
-                <div class="col-lg-12">
-                    <li>Javascript - Operadores Logicos</li> 
-                    <li>Javascript - Operadores Matematicos</li> 
-                    <li>Javascript - Operadores de Atribuição</li>  
-                    <li>Javascript - Operadores Lógicos</li> 
-                    <ol>AND - &&  OR - ||NOT - !</ol>
-                    <li>Javascript - Estrutura de Condição</li> 
-                    <p>Se (condicao) entao VERDADEIRA senao FALSO Fim</p>
-                    <p>IF (condicao) then { VERDADEIRA }  else { FALSO } </p>
+    <div>
+        <header class="p-3 bg-dark text-white">
+            <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <div class="nav col-12 col-lg-auto me-lg-auto mb-3 justify-content-center mb-md-0">
+                <button type="text" class="btn btn-outline-light me-3">#Instituto Eldorado - Projeto 1 Semana</button>
+                </div>
+            </div>
+            </div>
+        </header>
+                                    
+
+        <div class=" flex-wrap align-items-center justify-content-center justify-content-lg-start album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="https://www.belasmensagens.com.br/wp-content/uploads/2018/04/nao-coloque-limites.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col">
+                        <div class="card shadow-sm">
+                             <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="https://www.belasmensagens.com.br/wp-content/uploads/2018/04/voce-tem-um-sonho.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <form action="dashboard.html" method="post">
+                                    <h1 class="h3 mb-3 fw-normal">Login</h1>
+                                    <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                                    <label for="floatingInput">Email:</label>
+                                    </div>
+                                    <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" required>
+                                    <label for="floatingPassword">Senha:</label>
+                                    </div>
+                                    <div class="checkbox mb-3">
+                                    <label>
+                                        <input type="checkbox" value="remember-me"> Lembrar
+                                    </label>
+                                    </div>
+                                    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+                                </form>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="https://www.belasmensagens.com.br/wp-content/uploads/2018/04/nao-deixe-seus-sonhos.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col">
+                        <div class="card shadow-sm">
+                             <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="https://www.belasmensagens.com.br/wp-content/uploads/2018/04/nossos-sonhos-sao-pontes.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                             <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="https://www.belasmensagens.com.br/wp-content/uploads/2018/04/as-pessoas-que-guardam.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -68,3 +175,4 @@
     </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
